@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Primera pagina de</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../recursos/extra/icono.png">	
+  <script src="../javascript/menu.js" defer></script>
+
+</head>
+
+<body>
+ <header>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul class="horizontal" id="menu">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../seccion2/index.html">Sobre mi</a></li>
+      <li><a href="../contacto/index.html">Contacto</a></li>
+      <li><a href="../projectos/index.html">Projectos</a></li>
+   </ul>
+  </nav>
+ </header>
+
+   <ul class="barra">
+<li>
+  <div class="appdivisor"><img src="../recursos/extra/Win95_startup_logo.webp" class="iconowindows"></li>
+   <p class="textoicono">Start</p>
+  </div>
+</ul>
+
+<main>
+  <section id="inicio">
+    <div class="principio">
+       <br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="../recursos/trabajos/dibujo.jpeg" style="width:40%">
+    <div class="text">Dibujo</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../recursos/trabajos/dibujo1.png" style="width:30%">
+    <div class="text">Dibujo</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../recursos/trabajos/dibujo3.jpeg" style="width:40%">
+    <div class="text">Dibujo (Paint)</div>
+  </div>
+
+    <div class="mySlides fade">
+    <img src="../recursos/trabajos/jasonandbryant.png" style="width:50%">
+    <div class="text">Dibujo</div>
+  </div>
+  
+    <div class="mySlides fade">
+    <img src="../recursos/trabajos/maxwell.png" style="width:50%">
+    <div class="text">Dibujo</div>
+  </div>
+
+      <div class="mySlides fade">
+    <img src="../recursos/trabajos/narrador.webp" style="width:50%">
+    <div class="text">Dibujo de Diseño de Personaje</div>
+  </div>
+
+        <div class="mySlides fade">
+    <video src="../recursos/trabajos/render1.mp4" controls style="width:50%"></video>
+    <div class="text">Animación de Texto/Canción (After Effects)</div>
+  </div>
+
+          <div class="mySlides fade">
+    <video src="../recursos/trabajos/render2.mp4" controls style="width:50%"></video>
+    <div class="text">Animación de Collage</div>
+  </div>
+
+         <div class="mySlides fade">
+   <video src="../recursos/trabajos/render3.mp4" controls style="width:50%"></video>
+  <div class="text">Animación de Canción para Niños</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<script>
+let slideIndex = 0;
+let slides = document.getElementsByClassName("mySlides");
+
+function showSlides(n) {
+  if (n >= slides.length) slideIndex = 0;
+  else if (n < 0) slideIndex = slides.length - 1;
+  else slideIndex = n;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+
+  slides[slideIndex].classList.add("active");
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex + n);
+}
+
+function currentSlide(n) {
+  showSlides(n);
+}
+
+// Initial display
+showSlides(slideIndex);
+</script>
+   </div>
+  </section>
+
+  
+
+</main>
+
+
+
+</body>
+</html>
